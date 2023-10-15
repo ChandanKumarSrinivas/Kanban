@@ -1,0 +1,70 @@
+body *{
+	/* width: 100%; */
+	font-family: 'IBM Plex Sans';
+	padding: 0px;
+}
+
+.kanban {
+	box-sizing: border-box;
+	display: flex;
+	padding: 30px;
+	width: 100%;
+	background: hwb(211 53% 0%);
+	border-radius: 5px;
+}
+
+.kanban * {
+	font-family: 'IBM Plex Sans';
+}
+
+.kanban__column {
+	flex: 1;
+}
+
+.kanban__column:not(:last-child) {
+	margin-right: 30px;
+}
+
+.kanban__column-title {
+	margin-bottom: 20px;
+	font-size: 25px;
+	font-weight: bold;
+	color: rgb(15, 53, 157);
+	/* color: rgb(0, 103, 106); */
+	text-align: center;
+	user-select: none;
+}
+
+.kanban__item-input {
+	padding: 10px 15px;
+	box-sizing: border-box;
+	color: rgb(0, 106, 106);
+	font-weight: 500;
+	background: rgb(162, 230, 255);
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+}
+
+.kanban__dropzone {
+	height: 15px;
+	transition: background 0.1s, height 0.1s;
+	border-radius: 5px;
+}
+
+.kanban__dropzone--active {
+	margin: 5px;
+	height: 40px;
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.kanban__add-item {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: white;
+	background: rgba(0, 0, 0, 0.1);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
